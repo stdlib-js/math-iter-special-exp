@@ -1,0 +1,37 @@
+{
+  "name": "@stdlib/math-iter-special-exp",
+  "version": "0.0.0",
+  "description": "Create an iterator which evaluates the natural exponential function for each iterated value.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/math-iter-special-exp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "math",
+    "mathematics",
+    "special",
+    "function",
+    "math.exp",
+    "exp",
+    "natural",
+    "exponential",
+    "euler",
+    "power",
+    "iterator",
+    "iterable",
+    "iterate"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
