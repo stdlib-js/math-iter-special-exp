@@ -34,38 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-iter-special-exp
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-iterExp = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-exp@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var iterExp = require( 'path/to/vendor/umd/math-iter-special-exp/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-exp@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.iterExp;
-})();
-</script>
+var iterExp = require( '@stdlib/math-iter-special-exp' );
 ```
 
 #### iterExp( iterator )
@@ -120,14 +112,9 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-exp@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var uniform = require( '@stdlib/random-iter-uniform' );
+var iterExp = require( '@stdlib/math-iter-special-exp' );
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = uniform( 0.0, 100.0, {
@@ -147,11 +134,6 @@ while ( true ) {
     }
     console.log( r.value );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -257,15 +239,15 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/exp]: https://github.com/stdlib-js/math-base-special-exp/tree/umd
+[@stdlib/math/base/special/exp]: https://github.com/stdlib-js/math-base-special-exp
 
-[@stdlib/math/iter/special/exp10]: https://github.com/stdlib-js/math-iter-special-exp10/tree/umd
+[@stdlib/math/iter/special/exp10]: https://github.com/stdlib-js/math-iter-special-exp10
 
-[@stdlib/math/iter/special/exp2]: https://github.com/stdlib-js/math-iter-special-exp2/tree/umd
+[@stdlib/math/iter/special/exp2]: https://github.com/stdlib-js/math-iter-special-exp2
 
-[@stdlib/math/iter/special/expm1]: https://github.com/stdlib-js/math-iter-special-expm1/tree/umd
+[@stdlib/math/iter/special/expm1]: https://github.com/stdlib-js/math-iter-special-expm1
 
-[@stdlib/math/iter/special/ln]: https://github.com/stdlib-js/math-iter-special-ln/tree/umd
+[@stdlib/math/iter/special/ln]: https://github.com/stdlib-js/math-iter-special-ln
 
 <!-- </related-links> -->
 
