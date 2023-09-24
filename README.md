@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import iterExp from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-exp@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-iter-special-exp/tags). For example,
+
+```javascript
 import iterExp from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-exp@v0.1.0-deno/mod.js';
 ```
 
@@ -109,7 +114,7 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 
 ```javascript
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@deno/mod.js';
-import iterExp from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-exp@v0.1.0-deno/mod.js';
+import iterExp from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-exp@deno/mod.js';
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = uniform( 0.0, 100.0, {
